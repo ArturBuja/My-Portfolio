@@ -1,14 +1,16 @@
 import "././scss/main.scss";
 import React from "react";
-import {Herosection} from "./componets/Herosection";
+import {HeroSection} from "./componets/HeroSection";
 import {AboutmeSection} from "./componets/AboutmeSection";
+import {Resume} from "./componets/Resume";
 
 
 export default function App() {
     return (
         <div className="App">
-            <Herosection/>
+            <HeroSection/>
             <AboutmeSection/>
+            <Resume/>
         </div>
     );
 }

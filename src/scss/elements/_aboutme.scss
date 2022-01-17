@@ -1,0 +1,69 @@
+.about--me--inside {
+  width: 90%;
+  margin: $spacer*3 0px;
+  margin-inline: auto;
+
+  .about--me--header {
+    display: flex;
+    flex-direction: column;
+    .header--text {
+      font-family: "Ubuntu", sans-serif;
+      font-weight: 800;
+      font-size: 3.5rem;
+      text-decoration: underline;
+      letter-spacing: 2px;
+      text-align: center;
+
+    }
+    .header--subtext {
+      font-size: 1.3rem;
+      font-family: "Ubuntu", sans-serif;
+      font-weight: 700;
+      opacity: .8;
+      text-transform: capitalize;
+      text-align: center;
+
+    }
+    .about--me--box {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: $spacer*3 0px;
+
+      .box--left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .box--right {
+        display: flex;
+        flex-direction: column;
+        padding: $spacer*3 0px;
+        .about--me--text {
+          font-family: "Ubuntu", sans-serif;
+          font-weight: 600;
+          font-size: 1.2rem;
+          opacity: 0.8;
+          text-align: justify;
+          margin-right: 1rem;
+
+        }
+        .about--me--highlights {
+          font-family: "Ubuntu", sans-serif;
+          padding-block: 12px;
+          .highlights--text{
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 900;
+            font-size: 1.5rem;
+
+          }
+          .highlights--list {
+            font-family: "Ubuntu", sans-serif;
+            font-size: 1.2rem;
+
+          }
+        }
+      }
+    }
+  }
+}

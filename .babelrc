@@ -1,0 +1,12 @@
+{
+  "sourceMaps": "inline",
+  "presets": [
+    "@babel/env",
+    "react"
+  ],
+  "plugins": [
+    ["transform-import-css", {
+      "generateScopedName": "lib-[name]-[local]-[hash:base64:4]"
+    }]
+  ]
+}

@@ -1,0 +1,35 @@
+.resume--outer--section {
+  display: flex;
+  flex-direction: column;
+
+  .resume--new--section {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin-inline: auto;
+    height: 400px;
+
+    .resume--left--section {
+      display: flex;
+      flex-direction: row;
+      
+
+      .left--span--resume {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .left--inner--resume {
+        display: flex;
+        flex-direction: column;
+
+        .resume--options--items {
+
+        }
+      }
+    }
+    .resume--right--section{
+
+    }
+  }
+}

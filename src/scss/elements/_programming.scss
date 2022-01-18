@@ -1,0 +1,20 @@
+
+.box{
+  margin: $spacer*.5 0px;
+  .language {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.5rem;
+    color: #1c1c1c;
+    text-transform: capitalize;
+  }
+.progress--bar {
+  background: red;
+  height: 20px;
+  width: 200px;
+  .progress--bar--second {
+    background: #1c1c1c;
+    height: 20px;
+
+  }
+}
+}

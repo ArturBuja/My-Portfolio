@@ -1,0 +1,41 @@
+.education--container {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 10px;
+
+  .education--one {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: $spacer * 1.5 0px;
+
+    .education--name {
+      display: flex;
+      flex-direction: column;
+
+      .education--name-school {
+        font-family: "Ubuntu", sans-serif;
+        color: red;
+        font-size: 1.4rem;
+        font-weight: 800;
+      }
+
+      .education--degree {
+        font-size: .8rem;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 800;
+        color: #1c1c1c;
+        text-transform: uppercase;
+      }
+    }
+
+    .education--passedout--year {
+      font-family: monospace;
+      font-size: 1rem;
+      background-color: $standoutColor;
+      color: #1c1c1c;
+      padding: 10px;
+      border-radius: 20px;
+    }
+  }
+}

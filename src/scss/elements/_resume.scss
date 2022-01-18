@@ -21,6 +21,7 @@
       display: flex;
       flex-direction: row;
       padding: 0;
+
       
 
       .left--span--resume {
@@ -62,10 +63,9 @@
         }
       }
 
-    .resume--right--section{
-
-    }
-
   }
   }
+}
+.resume--right--section{
+  padding: 16px;
 }

@@ -1,0 +1,29 @@
+.work--inside--new{
+  margin: $spacer *1.5 10px;
+  .work--container {
+    display: flex;
+    flex-direction: column;
+
+    .work {
+      display: flex;
+      flex-direction: row ;
+      justify-content: space-between;
+          }
+  }
+  .work--name--company {
+    color: #1c1c1c;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-decoration: underline;
+  }
+  .work--position{
+    color: #1c1c1c;
+  }
+  .work--description {
+    display: flex;
+    flex-direction: column;
+    color: #1c1c1c;
+
+  }
+}

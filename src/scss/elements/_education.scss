@@ -1,7 +1,7 @@
 .education--container {
   display: flex;
   flex-direction: column;
-  margin: 0px 10px;
+
 
   .education--one {
     display: flex;
@@ -28,14 +28,14 @@
         text-transform: uppercase;
       }
     }
-
-    .education--passedout--year {
-      font-family: monospace;
-      font-size: 1rem;
-      background-color: $standoutColor;
-      color: #1c1c1c;
-      padding: 10px;
-      border-radius: 20px;
-    }
   }
+}
+
+.passedout--year {
+  font-family: monospace;
+  font-size: 1rem;
+  background-color: $standoutColor;
+  color: #1c1c1c;
+  padding: 10px;
+  border-radius: 20px;
 }

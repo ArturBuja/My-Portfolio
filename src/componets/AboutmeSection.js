@@ -7,7 +7,7 @@ export function AboutmeSection() {
             <div className="about--me--header ">
                 <span className="header--text">About me</span>
                 <span className="header--subtext">Why choose me? </span>
-                <div className="about--me--box shadow-lg">
+                <div className="about--me--box row shadow-lg">
                     <div className="col-lg-6 col-md-6 col-sm-12 box--left">
                         <lottie-player src="https://assets1.lottiefiles.com/private_files/lf30_Twfrj1.json"
                                        background="transparent" speed="1" style={ {width: "500px", height: "500px"} }

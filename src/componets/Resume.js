@@ -28,7 +28,7 @@ export function Resume() {
             <span className="header--text">Resume </span>
             <span className="header--subtext">My formal bio details</span>
 
-            <div className="resume--new--section">
+            <div className="resume--new--section row">
                 <div className="col-lg-4 col-md-4 col-sm-12 shadow-lg resume--left--section">
                     <div className="left--span--resume">
                         

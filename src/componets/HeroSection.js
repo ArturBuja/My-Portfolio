@@ -14,7 +14,7 @@ export function HeroSection() {
                 <span className="nav--items">Contact me</span>
             </div>
         </nav>
-        <div className="herosection--2">
+        <div className="herosection--2 row">
             <div className="col-lg-6 col-md-6 col-sm-12">
                 <div className="outer--img Anim">
                     <img src={ logo } alt="image" className="img-fluid custom--img"/>

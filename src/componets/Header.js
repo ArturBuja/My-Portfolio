@@ -2,7 +2,7 @@ import {FaReact} from "react-icons/fa";
 import logo from "../assets/P1750825.JPG";
 import React from "react";
 
-export function HeroSection() {
+export function Header() {
     return <div className="herosection px-10">
         <nav>
             <span className="brand-name"> <FaReact y="10"/> ARTUR BUJA</span>
@@ -10,7 +10,7 @@ export function HeroSection() {
                 <span className="nav--items">Home</span>
                 <span className="nav--items">About me</span>
                 <span className="nav--items">Resume</span>
-                <span className="nav--items">Testimonial</span>
+                <span className="nav--items">Testimonials</span>
                 <span className="nav--items">Contact me</span>
             </div>
         </nav>

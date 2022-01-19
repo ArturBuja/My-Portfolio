@@ -1,18 +1,22 @@
 import "././scss/main.scss";
 import React from "react";
-import {HeroSection} from "./componets/HeroSection";
+import {Header} from "./componets/Header";
 import {AboutmeSection} from "./componets/AboutmeSection";
 import {Resume} from "./componets/Resume";
-import Repositories from "./componets/Repositories";
+import Testimonials from "./componets/Testimonials";
+import ContactMe from "./componets/contactMe";
+import Footer from "./componets/Footer";
 
 
 export default function App() {
     return (
         <div className="App">
-            <HeroSection />
+            <Header />
             <AboutmeSection />
             <Resume />
-            <Repositories />
+            <Testimonials />
+            <ContactMe />
+            <Footer />
         </div>
     );
 }

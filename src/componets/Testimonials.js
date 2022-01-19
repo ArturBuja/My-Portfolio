@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 
-function Repositories() {
+function Testimonials() {
     const [name, getName] = useState([]);
 
     useEffect(() => {
@@ -66,4 +66,4 @@ function Repositories() {
     );
 }
 
-export default Repositories;
+export default Testimonials;

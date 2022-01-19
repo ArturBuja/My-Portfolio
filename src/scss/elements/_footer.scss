@@ -1,0 +1,22 @@
+.footer {
+  height: 200px;
+  width: 100%;
+  background: linear-gradient(-90deg, $primaryAppColor, $secondaryAppColor);
+  clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
+  //position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: $spacer*3;
+
+
+    .gh--logo{
+      color: white;
+      padding-inline: 10px;
+    }
+    .ld--logo{
+      color: white;
+    }
+
+}

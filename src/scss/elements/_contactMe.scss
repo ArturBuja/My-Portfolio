@@ -65,11 +65,10 @@
 }
 
 .contact--me-bg {
-  margin: 0 auto;
   clip-path: polygon(0 5%, 100% 15%, 100% 80%, 0 95%);
   background: linear-gradient(-90deg, $primaryAppColor, $secondaryAppColor);
   height: 700px;
-  width: 1680px;
+  width: 100%;
   position: absolute;
   z-index: -4;
 }

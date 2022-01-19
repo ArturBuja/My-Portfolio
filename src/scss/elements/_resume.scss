@@ -5,7 +5,7 @@
   padding-bottom: 100px;
   background: $primaryAppColor;
   color: white;
-  clip-path: polygon(0 11%, 100% 0, 100% 100%,0 100%);
+  clip-path: polygon(0 11%, 100% 0, 100% 100%, 0 100%);
 
   .resume--new--section {
     width: 90%;
@@ -13,7 +13,7 @@
     margin-top: 42px;
     min-height: 400px;
     background-color: white;
-    box-shadow: 10px 10px 31px 2px #1c1c1c ;
+    box-shadow: 10px 10px 31px 2px #1c1c1c;
 
     .resume--left--section {
       display: flex;
@@ -25,7 +25,8 @@
         flex-direction: column;
         background: linear-gradient(-45deg, $primaryAppColor, $secondaryAppColor);
         color: white;
-        .icon-span{
+
+        .icon-span {
           margin-block: 24px;
           margin-inline: 24px;
         }
@@ -38,30 +39,34 @@
 
         .resume--options--items {
           width: 1%;
-          transition: all .3s ease-in-out;
+          transition: all .3s ease-out;
           padding-block: 24px;
           padding-inline: 24px;
           color: #000;
           cursor: pointer;
           border-top-right-radius: 20px;
           border-bottom-right-radius: 20px;
-          &.active{
+          background: transparent;
+
+
+          &.active {
             background: linear-gradient(-45deg, $primaryAppColor, $secondaryAppColor);
             width: 100%;
             color: white;
 
           }
-          &:hover{
+
+          &:hover {
             width: 100%;
-            background: linear-gradient(-90deg, $primaryAppColor, $secondaryAppColor);
+            background: linear-gradient(to left, $primaryAppColor, $secondaryAppColor) right;
             color: white;
           }
         }
       }
-
-  }
+    }
   }
 }
-.resume--right--section{
+
+.resume--right--section {
   padding: 16px;
 }

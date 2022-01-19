@@ -45,6 +45,7 @@ export function Resume() {
                         </span>
                     </div>
                     <div className="left--inner--resume">
+
                         <span onClick={ () => {
                             changeState(setEducation, true)
                         } }

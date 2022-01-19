@@ -1,48 +1,75 @@
 .contact--me {
   color: #ffffff;
 
-  .contact--me-bg {
-    clip-path: polygon(0 5%, 100% 15%, 100% 80%, 0 95%);
-    background: linear-gradient(-90deg, $primaryAppColor, $secondaryAppColor);
-    height: 100%;
-    width: 100%;
-    //position: absolute;
-    z-index: -4;
-    .contact--me--inner {
-      display: flex;
-      flex-direction: column;
 
-      .contact--me--card {
+  .contact--me--inner {
+    display: flex;
+    flex-direction: column;
+    padding-block: 110px;
+
+    .contact--me--card {
+      background: #1c1c1c;
+      width: 80%;
+      box-shadow: 10px 10px 63px 4px rgb(243, 240, 240);
+      height: 500px;
+      margin-inline: auto;
 
 
-        .left--contact {
-          padding: $spacer *.5;
+      .left--contact {
+        padding: $spacer *.5;
 
-          .get--in--touch {
-            margin: $spacer*1.5 $spacer*3;
-          }
+        .get--in--touch {
+          margin: $spacer*1.5 $spacer*3;
+          color: #ffffff;
+          font-family: "Ubuntu", sans-serif;
+          font-weight: 700;
+          font-size: 2rem;
+
         }
+      }
 
-        .anim--container {
-          padding: $spacer*3 0px;
+      .anim--container {
+        padding: $spacer*3 0px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .right--contact {
+
+        .card--contact--right {
           display: flex;
-          justify-content: center;
-        }
+          flex-direction: column;
+          margin: 0 auto;
+          background-color: rgb(0, 7, 6);
+          box-shadow: 10px 10px 33px 4px rgb(243, 240, 240);
+          border-radius: 20px;
+          width: 60%;
+          padding: 24px;
 
-        .right--contact {
-
-          .card--contact--right {
+          .input--group {
+            margin: $spacer 0;
             display: flex;
             flex-direction: column;
 
-            .input--group {
-              margin: $spacer 0;
-              display: flex;
-              flex-direction: column;
+            .input--groups {
+              border: none;
+              border-radius: 10px;
+              padding: 10px;
             }
+
           }
         }
       }
     }
   }
+}
+
+.contact--me-bg {
+  margin: 0 auto;
+  clip-path: polygon(0 5%, 100% 15%, 100% 80%, 0 95%);
+  background: linear-gradient(-90deg, $primaryAppColor, $secondaryAppColor);
+  height: 700px;
+  width: 1680px;
+  position: absolute;
+  z-index: -4;
 }

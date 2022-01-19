@@ -13,9 +13,17 @@ margin: $spacer *1.5 0px ;
     border-radius: 50px 20px 50px 0px;
     padding: 24px;
     width: 98%;
-
+    height: 200px;
+    .card--description{
+      text-align: center;
+      overflow-y: auto;
+    }
+    a{
+      text-align: center;
+    }
     .card--name {
       color: #000000;
+      text-align: center;
       font-family: "Ubuntu", sans-serif;
       font-weight: 700;
     }

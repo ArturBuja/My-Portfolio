@@ -10,7 +10,7 @@ export function HeroSection() {
                 <span className="nav--items">Home</span>
                 <span className="nav--items">About me</span>
                 <span className="nav--items">Resume</span>
-                <span className="nav--items">Testimonail</span>
+                <span className="nav--items">Testimonial</span>
                 <span className="nav--items">Contact me</span>
             </div>
         </nav>

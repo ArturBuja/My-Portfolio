@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function Projects() {
-    return <>
+    return (
         <div className="education--container">
             <div className="education--one">
                 <div className="education--name">
@@ -9,7 +9,6 @@ export default function Projects() {
                     <span className="education--degree">Technologies used: SCSS, HTML5, JavaScript</span>
                     <a href="https://arturbuja.github.io/Zaplanuj_Jedzonko/"><span className="education--degree">Check live (click me!)</span>
                     </a>
-
                 </div>
                 <div><span className="passedout--year">2022</span></div>
             </div>
@@ -23,5 +22,5 @@ export default function Projects() {
                 <div><span className="passedout--year">2022</span></div>
             </div>
         </div>
-    </>
+    )
 }

@@ -27,22 +27,21 @@ export function Resume() {
         <div className="resume--outer--section">
             <span className="header--text">Resume </span>
             <span className="header--subtext">My formal bio details</span>
-
             <div className="resume--new--section row">
                 <div className="col-lg-4 col-md-4 col-sm-12 shadow-lg resume--left--section">
                     <div className="left--span--resume">
                         
                         <span className="icon-span">
-                            <i className="fas fa-user-graduate"></i>
+                            <i className="fas fa-user-graduate">{""}</i>
                         </span>
                         <span className="icon-span">
-                            <i className="fas fa-briefcase"></i>
+                            <i className="fas fa-briefcase">{""}</i>
                         </span>
                         <span className="icon-span">
-                            <i className="fas fa-code"></i>
+                            <i className="fas fa-code">{""}</i>
                         </span>
                         <span className="icon-span">
-                            <i className="fas fa-tasks"></i>
+                            <i className="fas fa-tasks">{""}</i>
                         </span>
                     </div>
                     <div className="left--inner--resume">

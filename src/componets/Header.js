@@ -6,6 +6,9 @@ export function Header() {
 
    const [openNav, setOpenNav] = useState(false)
     return (<>
+        <div className="navbar--option--mobile">
+            <div className="bars" onClick={()=>setOpenNav(!openNav)}> </div>
+        </div>
         <nav className={!openNav ?"nav navbar-new transition-all" : "nav navbar-fixed-new transition-all"}>
             <span className="brand-name"> <FaReact y="10"/> ARTUR BUJA</span>
             <div className="nav--section">
@@ -18,7 +21,6 @@ export function Header() {
         </nav>
 
         <div className="herosection px-10">
-            <div className="bars" onClick={()=>setOpenNav(!openNav)}> </div>
 
             <div className="herosection--2 row">
                 <div className="col-lg-6 col-md-6 col-sm-12">

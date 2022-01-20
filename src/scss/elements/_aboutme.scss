@@ -74,3 +74,21 @@
     }
   }
 }
+//MOBILE VIEW
+@media all and (max-width: 786px) {
+
+  .box--right{
+    padding: 0 0 48px 0!important;
+  .about--me--text {
+    padding-inline: 1rem;
+    margin-right: 0px;
+  }
+  .about--me--highlights {
+    .highlights--text {
+      padding-top: $spacer;
+      display: block;
+      text-align: center;
+    }
+  }
+  }
+}

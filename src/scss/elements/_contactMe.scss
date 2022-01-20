@@ -19,6 +19,8 @@
         padding: $spacer *.5;
 
         .get--in--touch {
+          width: 100%;
+          text-align: center;
           margin: $spacer*1.5 $spacer*3;
           color: #ffffff;
           font-family: "Ubuntu", sans-serif;
@@ -43,7 +45,7 @@
           background-color: rgb(0, 7, 6);
           box-shadow: 10px 10px 33px 4px rgb(243, 240, 240);
           border-radius: 20px;
-          width: 60%;
+          width: 80%;
           padding: 24px;
 
           .input--group {
@@ -72,3 +74,4 @@
   position: absolute;
   z-index: -4;
 }
+

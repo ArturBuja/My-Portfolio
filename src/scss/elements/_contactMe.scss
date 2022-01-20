@@ -19,8 +19,6 @@
         padding: $spacer *.5;
 
         .get--in--touch {
-          width: 100%;
-          text-align: center;
           margin: $spacer*1.5 $spacer*3;
           color: #ffffff;
           font-family: "Ubuntu", sans-serif;
@@ -75,3 +73,26 @@
   z-index: -4;
 }
 
+//MOBILE VIEW
+@media all and (max-width: 786px) {
+  .contact--me{
+    .contact--me--inner{
+      .contact--me--card{
+        .left--contact{
+          .get--in--touch{
+            display: block;
+            text-align: center;
+          }
+        }
+        .right--contact{
+          .card--contact--right{
+            width: 90%;
+          }
+        }
+        .anim--container{
+          padding: 0px;
+        }
+      }
+    }
+  }
+}

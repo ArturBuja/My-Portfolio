@@ -1,20 +1,25 @@
 import {FaReact} from "react-icons/fa";
 import logo from "../assets/P1750825.JPG";
-import React from "react";
+import React, {useState} from "react";
 
 export function Header() {
-    return (
+
+   const [openNav, setOpenNav] = useState(false)
+    return (<>
+        <nav className={!openNav ?"nav navbar-new transition-all" : "nav navbar-fixed-new transition-all"}>
+            <span className="brand-name"> <FaReact y="10"/> ARTUR BUJA</span>
+            <div className="nav--section">
+                <span className="nav--items">Home</span>
+                <span className="nav--items">About me</span>
+                <span className="nav--items">Resume</span>
+                <span className="nav--items">Testimonials</span>
+                <span className="nav--items">Contact me</span>
+            </div>
+        </nav>
+
         <div className="herosection px-10">
-            <nav>
-                <span className="brand-name"> <FaReact y="10"/> ARTUR BUJA</span>
-                <div className="nav--section">
-                    <span className="nav--items">Home</span>
-                    <span className="nav--items">About me</span>
-                    <span className="nav--items">Resume</span>
-                    <span className="nav--items">Testimonials</span>
-                    <span className="nav--items">Contact me</span>
-                </div>
-            </nav>
+            <div className="bars" onClick={()=>setOpenNav(!openNav)}> </div>
+
             <div className="herosection--2 row">
                 <div className="col-lg-6 col-md-6 col-sm-12">
                     <div className="outer--img Anim">
@@ -42,5 +47,5 @@ export function Header() {
             <br/>
             <br/>
         </div>
-    )
+    </>)
 }

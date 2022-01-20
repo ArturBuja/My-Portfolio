@@ -1,5 +1,5 @@
 import {FaReact} from "react-icons/fa";
-import logo from "../assets/P1750825.JPG";
+import logo from "../assets/P1750825-min.JPG";
 import React, {useState} from "react";
 
 export function Header() {

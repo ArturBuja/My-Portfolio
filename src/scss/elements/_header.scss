@@ -46,6 +46,7 @@ svg {
       color: #fff;
       font-size: $spacer *1.3;
       font-family: "Ubuntu", sans-serif;
+      text-decoration: none;
       @include mobile {
         padding-block: 20px;
       }
@@ -146,10 +147,11 @@ svg {
       border: 2px solid white;
       transition: all .3s ease-in-out;
       animation: Anim 1s ease-in-out infinite;
+      text-decoration: none;
 
       &:hover {
         transform: translateY(-5px);
-        background-color: $standoutColor;
+        background-color: #ffc83d;
         color: #1c1c1c;
       }
     }
@@ -164,6 +166,7 @@ svg {
       padding: 5px 25px;
       border: 2px solid white;
       transition: all .3s ease-in-out;
+      text-decoration: none;
 
       &:hover {
         transform: translateY(-5px);
@@ -197,10 +200,10 @@ svg {
   @include mobile {
     display: flex;
     justify-content: flex-end;
-    width: 80px;
+    width: 84px;
     right: 0;
-    border-radius: 0% 98% 0% 100% / 0% 0% 100% 100%;
-    height: 58px;
+    border-radius: 0% 100% 0% 100% / 0% 0% 100% 100%;
+    height: 60px;
     position: fixed;
     z-index: 44;
     background: linear-gradient(-45deg, $primaryAppColor, $secondaryAppColor);

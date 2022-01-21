@@ -2,8 +2,8 @@ import React from "react";
 
 export function AboutmeSection() {
     return (
-        <div className="about--me--section about--me--inside">
-            <div className="about--me--header ">
+        <div className="about--me--section about--me--inside" id="aboutMe">
+            <div className="about--me--header " >
                 <span className="header--text">About me</span>
                 <span className="header--subtext">Why choose me? </span>
                 <div className="about--me--box row shadow-lg">

@@ -24,7 +24,7 @@ export function Resume() {
     }
 
     return (
-        <div className="resume--outer--section">
+        <div className="resume--outer--section" id="resume">
             <span className="header--text">Resume </span>
             <span className="header--subtext">My formal bio details</span>
             <div className="resume--new--section row">

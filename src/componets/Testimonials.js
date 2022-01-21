@@ -18,7 +18,7 @@ function Testimonials() {
 
     return (
 
-        <div className="about--me--section about--me--inside">
+        <div className="about--me--section about--me--inside" id="testimonials">
             <div className="about--me--header ">
                 <span className="header--text">Testimonials </span>
                 <span className="header--subtext">My github sample projects </span>

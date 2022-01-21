@@ -5,7 +5,7 @@ function ContactMe() {
     const [email, setEmail] = useState("")
     const [message, setMessage] = useState("")
     return (
-        <div className="contact--me">
+        <div className="contact--me" id="contactMe">
             <div className="contact--me-bg"></div>
                 <div className="contact--me--inner">
                     <span className="header--text">Contact me</span>

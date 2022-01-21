@@ -25,13 +25,13 @@ function ContactMe() {
         setMessage("")
     };
     return (
-        <div className="contact--me" id="contactMe">
+        <div className="contact--me" >
             <div className="contact--me-bg"></div>
                 <div className="contact--me--inner">
                     <span className="header--text">Contact me</span>
                     <span className="header--subtext">Lets keep in touch</span>
-                    <div className="contact--me--card row">
-                        <div className="col-lg-6 col-md-5 col-sm-12 left--contact">
+                    <div className="contact--me--card row" >
+                        <div className="col-lg-6 col-md-5 col-sm-12 left--contact" >
                             <span className="get--in--touch">Get in touch</span>
                             <div className="anim--container">
                                 <lottie-player
@@ -43,7 +43,7 @@ function ContactMe() {
                                 >{ }</lottie-player>
                             </div>
                         </div>
-                        <div className="col-lg-6 col-md-5 col-sm-12 my-auto right--contact">
+                        <div className="col-lg-6 col-md-5 col-sm-12 my-auto right--contact" id="contactMe">
                             <form ref={form} onSubmit={sendEmail} className="card--contact--right">
                                 <div className="input--group">
                                     <label> Name </label>

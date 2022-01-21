@@ -10,6 +10,13 @@ function ContactMe() {
     const [message, setMessage] = useState("")
     const sendEmail = (e) => {
         e.preventDefault();
+        if(!name){
+            alert('Fill in the name field\n')
+        } else if (!email){
+            alert('Fill in the e-mail field\n')
+        } else if (!message){
+            alert('Fill in the message field\n')
+        } else {
 
         emailjs.sendForm('service_uwh1rwk', 'template_wsm7ggl', form.current, 'user_27h1MqqBApNu181G79mlX')
             .then((result) => {
@@ -23,6 +30,7 @@ function ContactMe() {
         setName("")
         setEmail("")
         setMessage("")
+        }
     };
     return (
         <div className="contact--me" >

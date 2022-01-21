@@ -68,9 +68,42 @@
     }
   }
 }
-.btn-success{
+[type="submit"]:not{
   background-color: #ec5626;
-  border-color:#ec5626 ;
+  border-color:#ec5626;
+  outline: none;
+}
+.btn.btn-success, [type="submit"]:focus{
+  background-color: #ec5626;
+  border-color:#ec5626;
+  outline: none;
+  &:hover{
+    background-color: #ec5626;
+    border-color:#ec5626;
+    outline: none;
+  }
+  &:active{
+    background-color: #ec5626;
+    border-color:#ec5626;
+    outline: none;
+  }
+  &:checked{
+    background-color: #ec5626;
+    border-color:#ec5626;
+    outline: none;
+  }
+  &:target{
+    background-color: #ec5626;
+    border-color:#ec5626;
+    outline: none;
+  }
+  &:focus{
+    background-color: #ec5626;
+    border-color:#ec5626;
+    outline: none;
+  }
+
+
 }
 .contact--me-bg {
   clip-path: polygon(0 5%, 100% 15%, 100% 80%, 0 95%);

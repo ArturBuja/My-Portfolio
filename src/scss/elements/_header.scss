@@ -92,6 +92,9 @@ svg {
     justify-content: center;
     padding-top: 52px;
     text-align: center;
+    @include mobile{
+      margin-inline:  10px;
+    }
 
     .header--text {
       font-family: "Ubuntu", sans-serif;

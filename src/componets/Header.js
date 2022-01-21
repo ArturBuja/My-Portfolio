@@ -12,11 +12,11 @@ export function Header() {
     const el = useRef(null);
     useEffect(() => {
         const typed = new Typed(el.current, {
-            strings: ["Enthusiastic developer 😎", "Javascript Developer 👨‍💻", "Communicative guy 😊", "Gaming lover 🎮", "Ambitious 💪🏻"],
+            strings: ["Enthusiastic developer 😎", "Javascript Developer 👨‍💻", "Communicative guy 😊", "Gaming lover 🎮", "Ambitious 💪🏻", "Newbie react 📖"],
             startDelay: 0,
             typeSpeed: 80,
             backSpeed: 20,
-            backDelay: 100,
+            backDelay: 500,
             loop: true,
             showCursor: true,
             autoInsertCss: true,
@@ -61,7 +61,7 @@ export function Header() {
                             {/*Enthusiastic developer  😎*/ }
                             </span>
                         <span className="header--text--subheading">
-                                Writing front-end applications with passion
+                                I try to learn new things and improve the code every day
                             </span>
                         <div className="header--buttons">
                             <a href="#contactMe" className="btn--hire--me">Hire me</a>

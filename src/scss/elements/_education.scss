@@ -8,16 +8,31 @@
     flex-direction: row;
     justify-content: space-between;
     margin: $spacer * 1.5 0px;
+    .education--year{
+      @include mobile{
+        flex: 2;
+        float: right;
+      }
+
+    }
 
     .education--name {
       display: flex;
-      flex-direction: column;
+           flex-direction: column;
+      @include mobile{
+        flex: 3;
+      }
+
+
 
       .education--name-school {
         font-family: "Ubuntu", sans-serif;
         color: red;
         font-size: 1.4rem;
         font-weight: 800;
+        @include mobile{
+          font-size: 1.2rem;
+        }
       }
 
       .education--degree {
@@ -26,6 +41,9 @@
         font-weight: 800;
         color: #1c1c1c;
         text-transform: uppercase;
+        @include mobile{
+          font-size: .7rem;
+        }
       }
     }
   }

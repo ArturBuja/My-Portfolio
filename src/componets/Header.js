@@ -6,7 +6,7 @@ export function Header() {
 
    const [openNav, setOpenNav] = useState(false)
     return (<>
-        <div className="navbar--option--mobile">
+        <div className="shadow-lg navbar--option--mobile">
             <div className="bars" onClick={()=>setOpenNav(!openNav)}> </div>
         </div>
         <nav className={!openNav ?"nav navbar-new transition-all" : "nav navbar-fixed-new transition-all"}>

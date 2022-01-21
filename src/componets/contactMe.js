@@ -18,7 +18,7 @@ function ContactMe() {
                                     src="https://assets9.lottiefiles.com/packages/lf20_uwos7l6e.json"
                                     background="transparent"
                                     speed="1"
-                                    style={ {width: "300px", height: "300px"} }
+                                    style={ {width: "300px"} }
                                     loop autoplay
                                 >{ }</lottie-player>
                             </div>
@@ -27,7 +27,7 @@ function ContactMe() {
                             <div className="card--contact--right">
                                 <div className="input--group">
                                     <label> Name </label>
-                                    <input onChange={(e =>{setName(e.target.value)})} value={name} className="input--groups" type="text" placeholder="Enter your email address"/>
+                                    <input onChange={(e =>{setName(e.target.value)})} value={name} className="input--groups" type="text" placeholder="Enter your name"/>
                                 </div>
                                 <div className="input--group">
                                     <label> E-mail </label>
@@ -35,7 +35,7 @@ function ContactMe() {
                                 </div>
                                 <div className="input--group">
                                     <label> Message </label>
-                                    <textarea onChange={(e =>{setMessage(e.target.value)})} value={message} className="input--groups" type="text" placeholder="Enter your name"/>
+                                    <textarea onChange={(e =>{setMessage(e.target.value)})} value={message} className="input--groups" type="text" placeholder="Enter your message"/>
                                 </div>
                                 <div className="input--group">
                                     <button className="btn btn-success">Send message</button>

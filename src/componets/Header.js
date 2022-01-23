@@ -35,7 +35,9 @@ export function Header() {
         <div className="shadow-lg navbar--option--mobile">
             {/*<div className="bars" onClick={ () => setOpenNav(!openNav) }></div>*/}
             <Hamburger color={"#fff"} toggled={openNav} toggle={setOpenNav} />
+
         </div>
+
         <nav className={ !openNav ? "nav navbar-new transition-all" : "nav navbar-fixed-new transition-all" }>
             <span className="brand-name"> <FaReact y="10"/> ARTUR BUJA</span>
             <div className="nav--section">
@@ -45,6 +47,7 @@ export function Header() {
                 <a href="#testimonials" className="nav--items" onClick={ () => setOpenNav(false) }>Testimonials</a>
                 <a href="#contactMe" className="nav--items" onClick={ () => setOpenNav(false) }>Contact me</a>
             </div>
+            <div className="close--navbar-new" onClick={ () => setOpenNav(!openNav) }></div>
         </nav>
 
         <div className="herosection px-10" id="home">

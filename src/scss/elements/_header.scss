@@ -163,6 +163,9 @@ svg {
       transition: all .3s ease-in-out;
       animation: Anim 1s ease-in-out infinite;
       text-decoration: none;
+      @include mobile{
+        font-size: .9rem;
+      }
 
       &:hover {
         transform: translateY(-5px);
@@ -182,6 +185,9 @@ svg {
       border: 2px solid white;
       transition: all .3s ease-in-out;
       text-decoration: none;
+      @include mobile{
+        font-size: .9rem;
+      }
 
       &:hover {
         transform: translateY(-5px);
@@ -204,12 +210,20 @@ svg {
     padding-bottom: 12px;
     object-fit: contain;
     border: 1px solid white;
+    box-shadow: inset 0px 20px 50px -7px rgb(255 255 255);
 
   }
 }
 
+.close--navbar-new{
+  width: 40%;
+  height: 100%;
+  position: fixed;
+  right: 0;
+}
+@include mobile{
 
-
+}
 .navbar--option--mobile {
   display: none;
   @include mobile {
@@ -258,6 +272,17 @@ svg {
       }
 
     }
+  }
+  .close--navbar-new{
+    display: none;
+    @include mobile{
+      width: 40%;
+      height: 100%;
+      position: fixed;
+      right: 0;
+      display: block;
+    }
+
   }
 }
 

@@ -66,13 +66,15 @@ svg {
 .herosection {
   &.px-10 {
     padding-inline: 90px;
+    //padding: 90px;
     @include mobile {
       padding-block: 10px;
-      padding-inline: 0px;
+      //padding: 90px;
+      padding-inline: 15px;
     }
   }
 
-  //padding-top: 3rem;
+
   padding-bottom: 3rem;
   background: linear-gradient(-90deg, $primaryAppColor, $secondaryAppColor);
   clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
@@ -202,7 +204,7 @@ svg {
     padding-bottom: 12px;
     object-fit: contain;
     border: 1px solid white;
-    //max-height: 900px;
+
   }
 }
 
@@ -220,7 +222,7 @@ svg {
     position: fixed;
     z-index: 44;
     background: linear-gradient(-45deg, $primaryAppColor, $secondaryAppColor);
-    padding: 0px $spacer;
+    padding: 0px 7px;
     border: none;
 
     .bars {

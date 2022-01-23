@@ -3,6 +3,8 @@ import logo from "../assets/P1750825-min.JPG";
 import React, {useEffect, useRef, useState} from "react";
 import Typed from "typed.js"
 import Picker from 'emoji-picker-react';
+import { Sling as Hamburger } from 'hamburger-react'
+
 
 
 export function Header() {
@@ -31,7 +33,8 @@ export function Header() {
 
     return (<>
         <div className="shadow-lg navbar--option--mobile">
-            <div className="bars" onClick={ () => setOpenNav(!openNav) }></div>
+            {/*<div className="bars" onClick={ () => setOpenNav(!openNav) }></div>*/}
+            <Hamburger color={"#fff"} toggled={openNav} toggle={setOpenNav} />
         </div>
         <nav className={ !openNav ? "nav navbar-new transition-all" : "nav navbar-fixed-new transition-all" }>
             <span className="brand-name"> <FaReact y="10"/> ARTUR BUJA</span>

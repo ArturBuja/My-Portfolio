@@ -6,7 +6,7 @@ export default function Work(){
         <div className="work--container">
             <div className="work">
             <span className="work--name--company">Freelancer</span>
-            <span className="passedout--year">2021 - present</span>
+            <span className="passedout--year">11/2021 - present</span>
         </div>
         </div>
         <div className="work--container">

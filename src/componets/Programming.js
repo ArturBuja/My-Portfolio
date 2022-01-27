@@ -4,13 +4,13 @@ export default function Programming() {
     const values = [
         {
             id: 1,
-            text: "Javascript",
-            percentage: 30
+            text: "HTML5",
+            percentage: 35
         },
         {
             id: 2,
-            text: "HTML5",
-            percentage: 35
+            text: "Javascript",
+            percentage: 30
         },
         {
             id: 3,
@@ -24,9 +24,20 @@ export default function Programming() {
         },
         {
             id: 5,
-            text: "SCSS",
+            text: "SASS",
             percentage: 30
         },
+        {
+            id: 6,
+            text: "Bootstrap",
+            percentage: 30
+        },
+        {
+            id: 7,
+            text: "WebStorm IDE",
+            percentage: 30
+        },
+
 
     ]
     return (
@@ -36,10 +47,10 @@ export default function Programming() {
                     return (
                         <div className="col-lg-5 col-mg-6 col-sm-12 box" key={ value.id }>
                             <span className="language">{ value.text }</span>
-                            <div className="progress--bar">
-                                <div style={ {width: `${ value.percentage }%`} }
-                                     className="progress--bar--second">{ "" }</div>
-                            </div>
+                            {/*<div className="progress--bar">*/}
+                            {/*    <div style={ {width: `${ value.percentage }%`} }*/}
+                            {/*         className="progress--bar--second">{ "" }</div>*/}
+                            {/*</div>*/}
                         </div>
                     )
                 })

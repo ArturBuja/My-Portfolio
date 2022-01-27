@@ -10,7 +10,7 @@ export default function Projects() {
                     <a href="https://arturbuja.github.io/Zaplanuj_Jedzonko/"><span className="education--degree">Check live (click me!)</span>
                     </a>
                 </div>
-                <div><span className="passedout--year">2022</span></div>
+                <div><span className="passedout--year">01/2022</span></div>
             </div>
             <div className="education--one">
                 <div className="education--name">
@@ -19,7 +19,7 @@ export default function Projects() {
                     <a href="https://arturbuja.github.io/My-Portfolio/"><span className="education--degree">You're on it right now </span>🔥
                     </a>
                 </div>
-                <div><span className="passedout--year">2022</span></div>
+                <div><span className="passedout--year">01/2022</span></div>
             </div>
         </div>
     )

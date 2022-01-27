@@ -66,7 +66,7 @@ function ContactMe() {
                                     <textarea name="message" onChange={(e =>{setMessage(e.target.value)})} value={message} className="input--groups" type="text" placeholder="Enter your message"/>
                                 </div>
                                 <div className="input--group">
-                                    <input className="btn btn-success" value="Send message" type="submit"/>
+                                    <input className="btn" value="Send message" type="submit"/>
                                 </div>
                             </form>
                         </div>

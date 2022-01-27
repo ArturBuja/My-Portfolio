@@ -68,39 +68,44 @@
     }
   }
 }
-[type="submit"]:not{
+
+.btn{
   background-color: #ec5626;
+  color: white;
   border-color:#ec5626;
   outline: none;
-}
-.btn.btn-success, [type="submit"]:focus{
-  background-color: #ec5626;
-  border-color:#ec5626;
-  outline: none;
+  text-align: center;
   &:hover{
-    background-color: #ec5626;
-    border-color:#ec5626;
+    background-color: #ec4512;
+    border-color:#ec4512;
     outline: none;
+    color: white;
   }
   &:active{
     background-color: #ec5626;
     border-color:#ec5626;
     outline: none;
+    color: white;
   }
   &:checked{
     background-color: #ec5626;
     border-color:#ec5626;
     outline: none;
+    color: white;
   }
   &:target{
     background-color: #ec5626;
     border-color:#ec5626;
     outline: none;
+    color: white;
   }
   &:focus{
     background-color: #ec5626;
     border-color:#ec5626;
+    box-shadow: none;
+    overflow: hidden;
     outline: none;
+    color: white;
   }
 
 

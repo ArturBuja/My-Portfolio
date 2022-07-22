@@ -37,7 +37,7 @@ function ContactMe() {
             <div className="contact--me-bg"></div>
                 <div className="contact--me--inner">
                     <span className="header--text">Contact me</span>
-                    <span className="header--subtext">Lets keep in touch</span>
+                    <span className="header--subtext">Let's keep in touch</span>
                     <div className="contact--me--card row" >
                         <div className="col-lg-6 col-md-5 col-sm-12 left--contact" >
                             <span className="get--in--touch">Get in touch</span>

@@ -10,12 +10,12 @@ export function Header() {
   useEffect(() => {
     const typed = new Typed(el.current, {
       strings: [
-        'Enthusiastic developer 😎',
-        'Javascript Developer 👨‍💻',
-        'Communicative guy 😊',
-        'Gaming lover 🎮',
-        'Ambitious 💪🏻',
-        'React 📖',
+        'Zapalony programista 😎',
+        'Javascript developer 👨‍💻',
+        'Komunikatywny 😊',
+        'Miłośnik gier 🎮',
+        'Ambitny 💪🏻',
+        'React developer 📖',
       ],
       startDelay: 0,
       typeSpeed: 80,
@@ -56,35 +56,35 @@ export function Header() {
             className='nav--items'
             onClick={() => setOpenNav(false)}
           >
-            Home
+            Strona główna
           </a>
           <a
             href='#aboutMe'
             className='nav--items'
             onClick={() => setOpenNav(false)}
           >
-            About me
+            O mnie
           </a>
           <a
             href='#resume'
             className='nav--items'
             onClick={() => setOpenNav(false)}
           >
-            Resume
+            Podsumowanie
           </a>
           <a
             href='#testimonials'
             className='nav--items'
             onClick={() => setOpenNav(false)}
           >
-            Testimonials
+            Referencje
           </a>
           <a
             href='#contactMe'
             className='nav--items'
             onClick={() => setOpenNav(false)}
           >
-            Contact me
+            Skontaktuj się ze mną
           </a>
         </div>
         <div
@@ -109,18 +109,18 @@ export function Header() {
                 {/*Enthusiastic developer  😎*/}
               </span>
               <span className='header--text--subheading'>
-                I try to learn new things and improve the code every day
+                Każdego dnia staram się uczyć nowych rzeczy i ulepszać kod
               </span>
               <div className='header--buttons'>
                 <a href='#contactMe' className='btn--hire--me'>
-                  Hire me
+                  Zatrudnij mnie
                 </a>
                 <a
                   href='https://drive.google.com/file/d/1ogA58cvEcCLnUqYwH405nnYKdsoaFogY/view?usp=sharing'
                   target='_blank'
                   className='btn--resume--me'
                 >
-                  Get Resume
+                  Pobierz CV
                 </a>
               </div>
             </div>

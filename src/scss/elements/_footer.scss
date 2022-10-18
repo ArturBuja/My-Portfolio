@@ -1,5 +1,4 @@
 .footer {
-
   height: 200px;
   width: 100%;
   background: linear-gradient(-90deg, $primaryAppColor, $secondaryAppColor);
@@ -22,12 +21,12 @@
 
   .gh--logo {
     color: white;
-    font-family: "Ubuntu", sans-serif;
+    font-family: 'Ubuntu', sans-serif;
   }
 
   .ld--logo {
     color: white;
-    font-family: "Ubuntu", sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 
     img {
       height: 32px;
@@ -35,10 +34,15 @@
     }
   }
 
+  .gl--logo {
+    img {
+      height: 42px;
+      width: 42px;
+    }
+  }
 }
 @media screen and (max-width: 786px) {
-  .footer{
+  .footer {
     margin-top: 250px;
   }
-
 }

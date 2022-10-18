@@ -1,22 +1,39 @@
+import React, { useEffect, useRef, useState, useContext } from 'react';
 import { FaReact } from 'react-icons/fa';
-import logo from '../assets/P1750825-min.JPG';
-import React, { useEffect, useRef, useState } from 'react';
 import Typed from 'typed.js';
 import Picker from 'emoji-picker-react';
 import { Sling as Hamburger } from 'hamburger-react';
 
+import { LangContext } from '../contex/lang-context';
+
+//ASSETS
+import logo from '../assets/P1750825-min.JPG';
+
 export function Header() {
+  const [openNav, setOpenNav] = useState(false);
   const el = useRef(null);
+
+  const langCtx = useContext(LangContext);
+
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: [
-        'Enthusiastic developer 😎',
-        'Javascript Developer 👨‍💻',
-        'Communicative guy 😊',
-        'Gaming lover 🎮',
-        'Ambitious 💪🏻',
-        'React 📖',
-      ],
+      strings: langCtx.isEnglish
+        ? [
+            'Enthusiastic developer 😎',
+            'Javascript Developer 👨‍💻',
+            'Communicative guy 😊',
+            'Gaming lover 🎮',
+            'Ambitious 💪🏻',
+            'React 📖',
+          ]
+        : [
+            'Zapalony programista 😎',
+            'Javascript developer 👨‍💻',
+            'Komunikatywny 😊',
+            'Miłośnik gier 🎮',
+            'Ambitny 💪🏻',
+            'React developer 📖',
+          ],
       startDelay: 0,
       typeSpeed: 80,
       backSpeed: 20,
@@ -30,7 +47,9 @@ export function Header() {
     };
   }, []);
 
-  const [openNav, setOpenNav] = useState(false);
+  const languageChangeHandler = () => {
+    langCtx.changeLang();
+  };
 
   return (
     <>
@@ -47,7 +66,6 @@ export function Header() {
         }
       >
         <span className='brand-name'>
-          {' '}
           <FaReact y='10' /> ARTUR BUJA
         </span>
         <div className='nav--section'>
@@ -56,35 +74,38 @@ export function Header() {
             className='nav--items'
             onClick={() => setOpenNav(false)}
           >
-            Home
+            {langCtx.isEnglish ? 'Home' : 'Strona Główna'}
           </a>
           <a
             href='#aboutMe'
             className='nav--items'
             onClick={() => setOpenNav(false)}
           >
-            About me
+            {langCtx.isEnglish ? 'About me' : 'O mnie'}
           </a>
           <a
             href='#resume'
             className='nav--items'
             onClick={() => setOpenNav(false)}
           >
-            Resume
+            {langCtx.isEnglish ? 'Resume' : 'Sczegóły'}
           </a>
           <a
             href='#testimonials'
             className='nav--items'
             onClick={() => setOpenNav(false)}
           >
-            Testimonials
+            {langCtx.isEnglish ? 'Testimonials' : 'Referencje'}
           </a>
           <a
             href='#contactMe'
             className='nav--items'
             onClick={() => setOpenNav(false)}
           >
-            Contact me
+            {langCtx.isEnglish ? 'Contact me' : 'Kontakt'}
+          </a>
+          <a className='nav--items' onClick={languageChangeHandler}>
+            {langCtx.isEnglish ? 'PL' : 'ENG'}
           </a>
         </div>
         <div
@@ -102,25 +123,34 @@ export function Header() {
           </div>
           <div className='col-lg-6 col-md-6 col-sm-12'>
             <div className='herosection--2--header'>
-              <span className='header--text'>
-                Hi, I'm <span className='header--text--name'>Artur Buja</span>
-              </span>
+              {langCtx.isEnglish ? (
+                <span className='header--text'>
+                  Hi, I'm <span className='header--text--name'>Artur Buja</span>
+                </span>
+              ) : (
+                <span className='header--text'>
+                  Cześć, nazywam się{' '}
+                  <span className='header--text--name'>Artur Buja</span>
+                </span>
+              )}
               <span className='header--text--enthusiastic' ref={el}>
                 {/*Enthusiastic developer  😎*/}
               </span>
               <span className='header--text--subheading'>
-                I try to learn new things and improve the code every day
+                {langCtx.isEnglish
+                  ? 'I try to learn new things and improve the code every day'
+                  : 'Każdego dnia staram się uczyć nowych rzeczy i ulepszać kod'}
               </span>
               <div className='header--buttons'>
                 <a href='#contactMe' className='btn--hire--me'>
-                  Hire me
+                  {langCtx.isEnglish ? 'Hire me' : 'Zatrudnij mnie'}
                 </a>
                 <a
                   href='https://drive.google.com/file/d/1ogA58cvEcCLnUqYwH405nnYKdsoaFogY/view?usp=sharing'
                   target='_blank'
                   className='btn--resume--me'
                 >
-                  Get Resume
+                  {langCtx.isEnglish ? 'Get Resume' : 'Pobierz CV'}
                 </a>
               </div>
             </div>

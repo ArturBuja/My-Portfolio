@@ -2,58 +2,57 @@
   display: flex;
   flex-direction: column;
 
-
   .education--one {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: $spacer * 1.5 0px;
-    .education--year{
-      @include mobile{
+    .education--year {
+      @include mobile {
         flex: 2;
         float: right;
       }
-
     }
 
     .education--name {
       display: flex;
-           flex-direction: column;
-      @include mobile{
+      width: 80%;
+      flex-direction: column;
+      @include mobile {
         flex: 3;
       }
 
-
-
       .education--name-school {
-        font-family: "Ubuntu", sans-serif;
+        font-family: 'Ubuntu', sans-serif;
         color: red;
         font-size: 1.4rem;
         font-weight: 800;
-        @include mobile{
+
+        @include mobile {
           font-size: 1.2rem;
         }
       }
 
       .education--degree {
-        font-size: .8rem;
-        font-family: "Ubuntu", sans-serif;
+        font-size: 0.8rem;
+        font-family: 'Ubuntu', sans-serif;
         font-weight: 800;
         color: #1c1c1c;
         text-transform: uppercase;
-        @include mobile{
-          font-size: .7rem;
+        @include mobile {
+          font-size: 0.7rem;
         }
       }
     }
-  }
-}
 
-.passedout--year {
-  font-family: monospace;
-  font-size: 1rem;
-  background-color: $standoutColor;
-  color: #fff;
-  padding: 10px;
-  border-radius: 20px;
+    .passedout--year {
+      font-family: monospace;
+      font-size: 1rem;
+      background-color: $standoutColor;
+      color: #fff;
+      padding: 10px;
+      border-radius: 20px;
+      width: 20%;
+    }
+  }
 }

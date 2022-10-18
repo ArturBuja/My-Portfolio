@@ -11,12 +11,12 @@ export function AboutmeSection() {
         {langCtx.isEnglish ? (
           <>
             <span className='header--text'>About me</span>
-            <span className='header--subtext'>Why choose me? </span>
+            {/* <span className='header--subtext'>Why choose me?</span> */}
           </>
         ) : (
           <>
             <span className='header--text'>O mnie</span>
-            <span className='header--subtext'>Dlaczego Ja?</span>
+            {/* <span className='header--subtext'>Dlaczego Ja?</span> */}
           </>
         )}
 
@@ -34,26 +34,21 @@ export function AboutmeSection() {
           {langCtx.isEnglish ? (
             <div className=' col-lg-6 col-md-6 col-sm-12 box--right'>
               <span className='about--me--text'>
-                Hi I'm a junior Front-End developer. I finished internal
-                security and completed the JavaScript course on CodersLab. I
-                program in javascript, use react library. I have experience in
-                creating websites and web applications. I love programming and i
-                want to know more interesting things.
+                Hi, I am a junior front-end developer. I have experience in
+                developing websites, as well as mobile apps for Android. I love
+                programming, it is the thing in which I fulfil myself, and I
+                want to learn new things every day. I graduated with a degree in
+                internal security, followed by a Javascript course along with
+                the use of the React library.
               </span>
               <span className='about--me--highlights'>
-                <span className='highlights--text'>
-                  Here are few highlight:
-                </span>
+                <span className='highlights--text'>Main interesed:</span>
                 <span className='highlights--list'>
                   <ul>
-                    <li>JavaScript(ES5/ES6+)</li>
-                    <li>CSS3/SCSS</li>
+                    <li>TypeScript</li>
                     <li>React</li>
-                    <li>Git</li>
-                    <li>Trello</li>
-                    <li>JIRA</li>
-                    <li>Adobe XD/Avocode</li>
-                    <li>HTML</li>
+                    <li>React Native</li>
+                    <li>Next.js</li>
                   </ul>
                 </span>
               </span>
@@ -61,27 +56,24 @@ export function AboutmeSection() {
           ) : (
             <div className=' col-lg-6 col-md-6 col-sm-12 box--right'>
               <span className='about--me--text'>
-                Cześć, jestem początkującym frot-end developerem. Skończyłem
-                studia na kierunku bezpieczeństwo wewnętrzne, a następnie kurs
-                Javascript wraz z użyciem biblioteki React. Mam doświadczenie w
-                tworzeniu stron internetowych, a także aplikacji mobilnych na
-                system android. Kocham programowanie, jest to rzecz w której się
-                spełniam, oraz mam chęć każdego dnia poznwać nowe rzeczy.
+                Cześć, jestem początkującym front-end developerem. Mam
+                doświadczenie w tworzeniu stron internetowych, a także aplikacji
+                mobilnych na system Android. Kocham programowanie, jest to rzecz
+                w której się spełniam, oraz mam chęć każdego dnia poznawać nowe
+                rzeczy. Skończyłem studia magisterskie na kierunku
+                bezpieczeństwo wewnętrzne, a następnie ukończyłem kurs
+                Javascript wraz z użyciem biblioteki React.
               </span>
               <span className='about--me--highlights'>
                 <span className='highlights--text'>
-                  Lista umiętności które posiadam:
+                  Główne zainteresowania:
                 </span>
                 <span className='highlights--list'>
                   <ul>
-                    <li>JavaScript(ES5/ES6+)</li>
-                    <li>CSS3/SCSS</li>
+                    <li>TypeScript</li>
                     <li>React</li>
-                    <li>Git</li>
-                    <li>Trello</li>
-                    <li>JIRA</li>
-                    <li>Adobe XD/Avocode</li>
-                    <li>HTML</li>
+                    <li>React Native</li>
+                    <li>Next.js</li>
                   </ul>
                 </span>
               </span>

@@ -45,7 +45,7 @@ export function Header() {
     return () => {
       typed.destroy();
     };
-  }, []);
+  }, [langCtx.isEnglish]);
 
   const languageChangeHandler = () => {
     langCtx.changeLang();
@@ -88,7 +88,7 @@ export function Header() {
             className='nav--items'
             onClick={() => setOpenNav(false)}
           >
-            {langCtx.isEnglish ? 'Resume' : 'Sczegóły'}
+            {langCtx.isEnglish ? 'Resume' : 'Życiorys'}
           </a>
           <a
             href='#testimonials'
@@ -129,7 +129,7 @@ export function Header() {
                 </span>
               ) : (
                 <span className='header--text'>
-                  Cześć, nazywam się{' '}
+                  Cześć, nazywam się
                   <span className='header--text--name'>Artur Buja</span>
                 </span>
               )}

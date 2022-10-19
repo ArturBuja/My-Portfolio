@@ -153,7 +153,7 @@ export function Header() {
                   {langCtx.isEnglish ? 'Hire me' : 'Zatrudnij mnie'}
                 </a>
                 <a
-                  href='https://drive.google.com/file/d/1ogA58cvEcCLnUqYwH405nnYKdsoaFogY/view?usp=sharing'
+                  href='https://drive.google.com/drive/folders/1wgT5mfd5xwZKWNJidOmIuw14FserKUVp?usp=sharing'
                   target='_blank'
                   className='btn--resume--me'
                 >

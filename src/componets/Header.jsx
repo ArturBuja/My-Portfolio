@@ -1,7 +1,14 @@
-import React, { useEffect, useRef, useState, useContext } from 'react';
+import React, {
+  useEffect,
+  useRef,
+  useState,
+  useContext,
+  useCallback,
+} from 'react';
+
+//COMPONETS LIB
 import { FaReact } from 'react-icons/fa';
 import Typed from 'typed.js';
-import Picker from 'emoji-picker-react';
 import { Sling as Hamburger } from 'hamburger-react';
 
 import { LangContext } from '../contex/lang-context';
@@ -47,9 +54,9 @@ export function Header() {
     };
   }, [langCtx.isEnglish]);
 
-  const languageChangeHandler = () => {
+  const languageChangeHandler = useCallback(() => {
     langCtx.changeLang();
-  };
+  }, {});
 
   return (
     <>

@@ -14,6 +14,11 @@ export default function Programming() {
     },
     {
       id: Math.random(),
+      text: 'TypeScript',
+      percentage: 30,
+    },
+    {
+      id: Math.random(),
       text: 'React JS',
       percentage: 20,
     },
@@ -24,7 +29,12 @@ export default function Programming() {
     },
     {
       id: Math.random(),
-      text: 'CSS3',
+      text: 'Next.js',
+      percentage: 20,
+    },
+    {
+      id: Math.random(),
+      text: 'CSS 3',
       percentage: 30,
     },
     {

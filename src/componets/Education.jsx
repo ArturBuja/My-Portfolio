@@ -26,7 +26,7 @@ export default function Education() {
           <span className='education--degree'>
             {langCtx.isEnglish
               ? 'Master in Internal Security'
-              : 'Bezpieczeństwo wewnętrzne'}
+              : 'Magister Bezpieczeństwa wewnętrznego'}
           </span>
         </div>
         <div className='education--year'>
@@ -37,7 +37,7 @@ export default function Education() {
         <div className='education--name'>
           <span className='education--name-school'>
             {langCtx.isEnglish
-              ? 'Jadwiga Markowa’s Secondary School no. 5'
+              ? 'Jadwiga Markowa Technical School No.5'
               : 'Technikum nr.5 im. Jadwigi Markowej'}
           </span>
           <span className='education--degree'>

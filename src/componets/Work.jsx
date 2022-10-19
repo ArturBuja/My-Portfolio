@@ -17,13 +17,23 @@ export default function Work() {
         <div className='work--container'>
           <span className='work--position'>React Native Developer</span>
           <span className='work--description'>
-            <ul>
-              <li>
-                {langCtx.isEnglish
-                  ? 'Creating mobile and publish apps for company for Android system'
-                  : 'Tworzenie oraz publikowanie aplikacji mobilnych dla systemu Android'}
-              </li>
-            </ul>
+            {langCtx.isEnglish ? (
+              <ul>
+                <li>Android application development</li>
+                <li>Publishing application in stores</li>
+                <li>Writing documentation for the application</li>
+                <li>Troubleshooting</li>
+                <li>Updating existing applications</li>
+              </ul>
+            ) : (
+              <ul>
+                <li>Tworzenie aplilkacji dla systemu Android</li>
+                <li>Publikowanie aplikacji w sklepach</li>
+                <li>Pisanie dokumentacji dla aplikacji</li>
+                <li>Rozwiązywanie problemów</li>
+                <li>Aktualizacja dotychczasowych aplikacji</li>
+              </ul>
+            )}
           </span>
         </div>
 
@@ -40,19 +50,15 @@ export default function Work() {
           <span className='work--description'>
             {langCtx.isEnglish ? (
               <ul>
-                <li>Shift management, assignment of duties</li>
-                <li>Taking care of cleanliness and stocking cleaning agents</li>
-                <li>Servicing the equipment</li>
-                <li>Repairing equipment in restaurant</li>
-                <li>Management facility cost</li>
+                <li>Managing the shifts</li>
+                <li>Managing the costs of the semis</li>
+                <li>Assigning tasks and assistance.</li>
               </ul>
             ) : (
               <ul>
-                <li>Zarządzanie zmianą, delegowanie zadań</li>
-                <li>Dbanie o czystość oraz uzupełnianie środków czystości</li>
-                <li>Serwisowanie urządzeń</li>
-                <li>Naprawa uszkodzonego wyposażenia w restauracji</li>
-                <li>Zarządzanie kosztami</li>
+                <li>Zarządzanie zmianą</li>
+                <li>Zarządzanie kosztami Semis</li>
+                <li>Pzydzielanie zadań i pomoc w ich realizowaniu</li>
               </ul>
             )}
           </span>

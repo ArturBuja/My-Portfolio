@@ -112,7 +112,7 @@ export function Header() {
             {langCtx.isEnglish ? 'Contact me' : 'Kontakt'}
           </a>
           <a className='nav--items' onClick={languageChangeHandler}>
-            {langCtx.isEnglish ? 'PL' : 'ENG'}
+            {langCtx.isEnglish ? 'PL' : 'EN'}
           </a>
         </div>
         <div
@@ -137,7 +137,7 @@ export function Header() {
               ) : (
                 <span className='header--text'>
                   Cześć, nazywam się
-                  <span className='header--text--name'>Artur Buja</span>
+                  <span className='header--text--name'> Artur Buja</span>
                 </span>
               )}
               <span className='header--text--enthusiastic' ref={el}>

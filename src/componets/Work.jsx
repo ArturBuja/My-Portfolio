@@ -58,7 +58,7 @@ export default function Work() {
               <ul>
                 <li>Zarządzanie zmianą</li>
                 <li>Zarządzanie kosztami Semis</li>
-                <li>Pzydzielanie zadań i pomoc w ich realizowaniu</li>
+                <li>Przydzielanie zadań i pomoc w ich realizowaniu</li>
               </ul>
             )}
           </span>

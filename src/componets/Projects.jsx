@@ -9,6 +9,28 @@ export default function Projects() {
     <div className='education--container'>
       <div className='education--one'>
         <div className='education--name'>
+          <span className='education--name-school'>
+            {langCtx.isEnglish ? 'Own portfolio site' : 'Własne portfolio'}
+          </span>
+          <span className='education--degree'>
+            {langCtx.isEnglish ? ' Technologies used' : 'Użyte technologie'}:
+            JavaScript, React JS , SCSS
+          </span>
+          <a href='https://arturbuja.github.io/My-Portfolio/'>
+            <span className='education--degree'>
+              {langCtx.isEnglish
+                ? "You're on it right now"
+                : 'Właśnie na niej jesteś'}
+            </span>
+            🔥
+          </a>
+        </div>
+        <div>
+          <span className='passedout--year'>02/2022</span>
+        </div>
+      </div>
+      <div className='education--one'>
+        <div className='education--name'>
           <span className='education--name-school'>Scrum Lab Front End</span>
           <span className='education--degree'>
             {langCtx.isEnglish ? ' Technologies used' : 'Użyte technologie'}:
@@ -26,26 +48,43 @@ export default function Projects() {
           <span className='passedout--year'>01/2022</span>
         </div>
       </div>
+
       <div className='education--one'>
         <div className='education--name'>
-          <span className='education--name-school'>
-            {langCtx.isEnglish ? 'Own portfolio site' : 'Własne portfolio'}
-          </span>
+          <span className='education--name-school'>Guess My Numer!</span>
           <span className='education--degree'>
             {langCtx.isEnglish ? ' Technologies used' : 'Użyte technologie'}:
-            JavaScript, React JS , SCSS
+            JavaScript, CSS 3
           </span>
-          <a href='https://arturbuja.github.io/My-Portfolio/'>
+          <a href='https://arturbuja.github.io/Guess_my_number/'>
             <span className='education--degree'>
               {langCtx.isEnglish
-                ? "You're on it right now"
-                : 'Właśnie na niej jesteś'}{' '}
+                ? 'Check live (click me!)'
+                : 'Zobacz na żywo (kliknij mnie)'}
             </span>
-            🔥
           </a>
         </div>
         <div>
-          <span className='passedout--year'>01/2022</span>
+          <span className='passedout--year'>12/2021</span>
+        </div>
+      </div>
+      <div className='education--one'>
+        <div className='education--name'>
+          <span className='education--name-school'>Pig Game</span>
+          <span className='education--degree'>
+            {langCtx.isEnglish ? ' Technologies used' : 'Użyte technologie'}:
+            JavaScript, CSS 3
+          </span>
+          <a href='https://arturbuja.github.io/Pig_game/'>
+            <span className='education--degree'>
+              {langCtx.isEnglish
+                ? 'Check live (click me!)'
+                : 'Zobacz na żywo (kliknij mnie)'}
+            </span>
+          </a>
+        </div>
+        <div>
+          <span className='passedout--year'>12/2021</span>
         </div>
       </div>
     </div>

@@ -56,7 +56,7 @@ export function Header() {
 
   const languageChangeHandler = useCallback(() => {
     langCtx.changeLang();
-  }, {});
+  }, []);
 
   return (
     <>

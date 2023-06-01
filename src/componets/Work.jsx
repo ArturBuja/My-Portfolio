@@ -39,6 +39,35 @@ export default function Work() {
 
         <div className='work--container'>
           <div className='work'>
+            <span className='work--name--company'>Netizens</span>
+            <span className='passedout--year'>12/2022 - 06/2023</span>
+          </div>
+        </div>
+        <div className='work--container'>
+          <span className='work--position'>Web Developer</span>
+          <span className='work--description'>
+            {langCtx.isEnglish ? (
+              <ul>
+                <li>Android or iOS application development</li>
+                <li>Publishing application in stores</li>
+                <li>Writing documentation for the application</li>
+                <li>Troubleshooting</li>
+                <li>Updating existing applications</li>
+              </ul>
+            ) : (
+              <ul>
+                <li>Tworzenie aplilkacji dla systemu Android oraz iOS</li>
+                <li>Publikowanie aplikacji w sklepach</li>
+                <li>Pisanie dokumentacji dla aplikacji</li>
+                <li>Rozwiązywanie problemów</li>
+                <li>Aktualizacja dotychczasowych aplikacji</li>
+              </ul>
+            )}
+          </span>
+        </div>
+
+        <div className='work--container'>
+          <div className='work'>
             <span className='work--name--company'>
               Burger King Amrest Sp. z o.o
             </span>

@@ -34,6 +34,11 @@ export default function Programming() {
     },
     {
       id: Math.random(),
+      text: 'WordPress',
+      percentage: 20,
+    },
+    {
+      id: Math.random(),
       text: 'CSS 3',
       percentage: 30,
     },

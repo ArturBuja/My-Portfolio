@@ -48,7 +48,6 @@ export function AboutmeSection() {
                     <li>TypeScript</li>
                     <li>React</li>
                     <li>React Native</li>
-                    <li>Next.js</li>
                   </ul>
                 </span>
               </span>

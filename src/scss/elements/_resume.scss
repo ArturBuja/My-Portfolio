@@ -15,7 +15,6 @@
     background-color: white;
     box-shadow: 10px 10px 31px 2px #1c1c1c;
 
-
     .resume--left--section {
       display: flex;
       flex-direction: row;
@@ -24,7 +23,11 @@
       .left--span--resume {
         display: flex;
         flex-direction: column;
-        background: linear-gradient(-45deg, $primaryAppColor, $secondaryAppColor);
+        background: linear-gradient(
+          -45deg,
+          $primaryAppColor,
+          $secondaryAppColor
+        );
         color: white;
 
         .icon-span {
@@ -37,10 +40,9 @@
         display: flex;
         flex-direction: column;
 
-
         .resume--options--items {
           width: 1%;
-          transition: all .3s ease-out;
+          transition: all 0.3s ease-out;
           padding-block: 24px;
           padding-inline: 24px;
           color: #000;
@@ -49,17 +51,24 @@
           border-bottom-right-radius: 20px;
           background: transparent;
 
-
           &.active {
-            background: linear-gradient(-45deg, $primaryAppColor, $secondaryAppColor);
+            background: linear-gradient(
+              -45deg,
+              $primaryAppColor,
+              $secondaryAppColor
+            );
             width: 100%;
             color: white;
-
           }
 
           &:hover {
             width: 100%;
-            background: linear-gradient(to left, $primaryAppColor, $secondaryAppColor) right;
+            background: linear-gradient(
+                to left,
+                $primaryAppColor,
+                $secondaryAppColor
+              )
+              right;
             color: white;
           }
         }
@@ -69,5 +78,8 @@
 }
 
 .resume--right--section {
-  padding: 16px;
+  max-height: 21.875rem;
+  overflow: hidden scroll;
+  padding: 1rem;
+  @include scroll-bar;
 }

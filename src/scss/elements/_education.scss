@@ -16,12 +16,13 @@
       }
       .passedout--year {
         font-family: monospace;
-        font-size: 1vw;
+        font-size: 1.2vw;
         background-color: $standoutColor;
         color: white;
         padding: 10px;
         border-radius: 20px;
-        width: 100%;
+        width: 30%;
+        text-align: center;
         @include mobile {
           font-size: 0.6rem;
           color: #fff;
@@ -38,10 +39,11 @@
       }
 
       .education--name-school {
-        font-family: 'Ubuntu', sans-serif;
+        font-family: 'Montserrat', sans-serif;
         color: red;
         font-size: 1.4rem;
-        font-weight: 800;
+        font-weight: 700;
+        padding-right: 1rem;
 
         @include mobile {
           font-size: 1.2rem;
@@ -50,10 +52,12 @@
 
       .education--degree {
         font-size: 0.8vw;
-        font-family: 'Ubuntu', sans-serif;
-        font-weight: 800;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
         color: #1c1c1c;
         text-transform: uppercase;
+        letter-spacing: 0.15em;
+
         @include mobile {
           font-size: 0.7rem;
         }

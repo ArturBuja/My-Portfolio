@@ -48,19 +48,29 @@ export default function Work() {
           <span className='work--description'>
             {langCtx.isEnglish ? (
               <ul>
-                <li>Android or iOS application development</li>
-                <li>Publishing application in stores</li>
-                <li>Writing documentation for the application</li>
+                <li>
+                  Maintenance and further development of mobile applications
+                </li>
+                <li>
+                  Maintenance and further development of websites based on the
+                  React library
+                </li>
+                <li>Publishing applications in stores</li>
                 <li>Troubleshooting</li>
-                <li>Updating existing applications</li>
+                <li>Updating libraries in applications</li>
+                <li>Updating WordPress-based websites</li>
               </ul>
             ) : (
               <ul>
-                <li>Tworzenie aplilkacji dla systemu Android oraz iOS</li>
+                <li>Utrzymywanie i dalszy rozwój aplilkacji mobinych</li>
+                <li>
+                  Utrzymywanie i dalszy rozwój stron internetowych opartych na
+                  bibliotece React
+                </li>
                 <li>Publikowanie aplikacji w sklepach</li>
-                <li>Pisanie dokumentacji dla aplikacji</li>
                 <li>Rozwiązywanie problemów</li>
-                <li>Aktualizacja dotychczasowych aplikacji</li>
+                <li>Aktualizacja bibliotek w aplikacjach</li>
+                <li>Aktualizacja stron opartych o WordPress</li>
               </ul>
             )}
           </span>

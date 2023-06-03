@@ -9,14 +9,25 @@
       flex-direction: row;
       justify-content: space-between;
       .work--name--company {
-        color: $primaryTextColor;
-        font-family: 'Ubuntu', sans-serif;
+        color: $standoutColor;
+        font-family: 'Montserrat', sans-serif;
         font-size: 1.5rem;
         font-weight: 800;
         text-decoration: underline;
       }
       .passedout--year {
-        color: $primaryTextColor;
+        font-family: monospace;
+        font-size: 1.2vw;
+        background-color: $standoutColor;
+        color: white;
+        padding: 10px;
+        border-radius: 20px;
+        width: 30%;
+        text-align: center;
+        @include mobile {
+          font-size: 0.6rem;
+          color: #fff;
+        }
       }
     }
   }

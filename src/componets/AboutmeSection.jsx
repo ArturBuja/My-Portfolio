@@ -23,10 +23,10 @@ export function AboutmeSection() {
         <div className='about--me--box row shadow-lg'>
           <div className='col-lg-6 col-md-6 col-sm-12 box--left'>
             <lottie-player
-              src='https://assets1.lottiefiles.com/private_files/lf30_Twfrj1.json'
+              src='https://assets9.lottiefiles.com/packages/lf20_9o3AQo.json'
               background='transparent'
               speed='1'
-              style={{ width: '500px', height: '500px' }}
+              style={{ width: '25rem', height: '25rem' }}
               loop
               autoplay
             />
@@ -34,12 +34,12 @@ export function AboutmeSection() {
           {langCtx.isEnglish ? (
             <div className=' col-lg-6 col-md-6 col-sm-12 box--right'>
               <span className='about--me--text'>
-                Hi, I am a junior front-end developer. I have experience in
-                developing websites, as well as mobile apps for Android. I love
-                programming, it is the thing in which I fulfil myself, and I
-                want to learn new things every day. I graduated with a degree in
-                internal security, followed by a Javascript course along with
-                the use of the React library.
+                Hi, I am a <b>front-end developer</b>. I have experience in
+                developing <b>websites</b> , as well as<b> mobile apps</b> for{' '}
+                <b>Android and iOS</b>. I love programming, it is the thing in
+                which I fulfil myself, and I want to learn new things every day.
+                I graduated with a degree in internal security, followed by a
+                Javascript course along with the use of the React library.
               </span>
               <span className='about--me--highlights'>
                 <span className='highlights--text'>Main interesed:</span>
@@ -55,10 +55,10 @@ export function AboutmeSection() {
           ) : (
             <div className=' col-lg-6 col-md-6 col-sm-12 box--right'>
               <span className='about--me--text'>
-                Cześć, jestem początkującym front-end developerem. Mam
-                doświadczenie w tworzeniu stron internetowych, a także aplikacji
-                mobilnych na system Android. Kocham programowanie, jest to rzecz
-                w której się spełniam, oraz mam chęć każdego dnia poznawać nowe
+                Cześć, jestem front-end developerem. Mam doświadczenie w
+                tworzeniu stron internetowych, a także aplikacji mobilnych na
+                system Android oraz iOS. Kocham programowanie, jest to rzecz w
+                której się spełniam, oraz mam chęć każdego dnia poznawać nowe
                 rzeczy. Skończyłem studia magisterskie na kierunku
                 bezpieczeństwo wewnętrzne, a następnie ukończyłem kurs
                 Javascript wraz z użyciem biblioteki React.
@@ -72,7 +72,6 @@ export function AboutmeSection() {
                     <li>TypeScript</li>
                     <li>React</li>
                     <li>React Native</li>
-                    <li>Next.js</li>
                   </ul>
                 </span>
               </span>

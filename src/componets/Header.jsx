@@ -14,7 +14,7 @@ import { Sling as Hamburger } from 'hamburger-react';
 import { LangContext } from '../contex/lang-context';
 
 //ASSETS
-import logo from '../assets/P1750825-min.JPG';
+import logo from '../assets/P1750825-min.jpg';
 
 export function Header() {
   const [openNav, setOpenNav] = useState(false);
@@ -72,9 +72,7 @@ export function Header() {
             : 'nav navbar-fixed-new transition-all'
         }
       >
-        <span className='brand-name'>
-          <FaReact y='10' /> ARTUR BUJA
-        </span>
+        <span className='brand-name'>ARTUR BUJA</span>
         <div className='nav--section'>
           <a
             href='#home'

@@ -1,7 +1,6 @@
 .contact--me {
   color: #ffffff;
 
-
   .contact--me--inner {
     display: flex;
     flex-direction: column;
@@ -14,37 +13,37 @@
       height: 500px;
       margin-inline: auto;
       margin-top: $spacer;
-      @include mobile{
-
+      @include mobile {
       }
 
-
       .left--contact {
-        padding: $spacer *.5;
+        padding: $spacer * 0.5;
 
         .get--in--touch {
-          margin: $spacer*1.5 $spacer*3;
+          margin: $spacer * 1.5 $spacer * 3;
           color: #ffffff;
-          font-family: "Ubuntu", sans-serif;
+          font-family: 'Montserrat', sans-serif;
           font-weight: 700;
           font-size: 2rem;
-
         }
       }
 
       .anim--container {
-        padding: $spacer*3 0px;
+        padding: $spacer * 3 0px;
         display: flex;
         justify-content: center;
       }
 
       .right--contact {
-
         .card--contact--right {
           display: flex;
           flex-direction: column;
           margin: 0 auto;
-          background: linear-gradient(-90deg, $primaryAppColor, $secondaryAppColor);
+          background: linear-gradient(
+            -90deg,
+            $primaryAppColor,
+            $secondaryAppColor
+          );
           box-shadow: 10px 10px 33px 4px rgb(243, 240, 240);
           border-radius: 20px;
           width: 80%;
@@ -54,39 +53,39 @@
             margin: $spacer 0;
             display: flex;
             flex-direction: column;
-            input.btn{
+            input.btn {
               background-color: #ec5626;
               color: white;
-              border-color:#ec5626;
+              border-color: #ec5626;
               outline: none;
               text-align: center;
-              &:hover{
+              &:hover {
                 background-color: #ec4512;
-                border-color:#ec4512;
+                border-color: #ec4512;
                 outline: none;
                 color: white;
               }
-              &:active{
+              &:active {
                 background-color: #ec5626;
-                border-color:#ec5626;
+                border-color: #ec5626;
                 outline: none;
                 color: white;
               }
-              &:checked{
+              &:checked {
                 background-color: #ec5626;
-                border-color:#ec5626;
+                border-color: #ec5626;
                 outline: none;
                 color: white;
               }
-              &:target{
+              &:target {
                 background-color: #ec5626;
-                border-color:#ec5626;
+                border-color: #ec5626;
                 outline: none;
                 color: white;
               }
-              &:focus{
+              &:focus {
                 background-color: #ec5626;
-                border-color:#ec5626;
+                border-color: #ec5626;
                 box-shadow: none;
                 overflow: hidden;
                 outline: none;
@@ -98,9 +97,7 @@
               border: none;
               border-radius: 10px;
               padding: 10px;
-
             }
-
           }
         }
       }
@@ -108,10 +105,8 @@
   }
 }
 
-
-
 .contact--me-bg {
-  clip-path: polygon(0 5%, 100% 15%, 100% 80%, 0 95%);
+  clip-path: polygon(0 10%, 100% 0%, 100% 80%, 0 100%);
   background: linear-gradient(-90deg, $primaryAppColor, $secondaryAppColor);
   height: 700px;
   width: 100%;
@@ -121,21 +116,21 @@
 
 //MOBILE VIEW
 @media all and (max-width: 786px) {
-  .contact--me{
-    .contact--me--inner{
-      .contact--me--card{
-        .left--contact{
-          .get--in--touch{
+  .contact--me {
+    .contact--me--inner {
+      .contact--me--card {
+        .left--contact {
+          .get--in--touch {
             display: block;
             text-align: center;
           }
         }
-        .right--contact{
-          .card--contact--right{
+        .right--contact {
+          .card--contact--right {
             width: 90%;
           }
         }
-        .anim--container{
+        .anim--container {
           padding: 0px;
         }
       }

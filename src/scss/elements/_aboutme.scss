@@ -1,36 +1,37 @@
 .header--text {
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 800;
   font-size: 3.5rem;
-  text-decoration: underline;
+  // text-decoration: underline;
   letter-spacing: 2px;
   text-align: center;
-
 }
 .header--subtext {
   font-size: 1.3rem;
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  opacity: .8;
+  opacity: 0.8;
   text-transform: capitalize;
   text-align: center;
   margin-bottom: $spacer;
-
 }
 
 .about--me--inside {
   width: 90%;
-  margin: $spacer*3 0px;
+  margin: $spacer * 3 0px;
   margin-inline: auto;
 
   .about--me--header {
     display: flex;
     flex-direction: column;
+    > span {
+      color: $standoutColor;
+    }
 
     .about--me--box {
       display: flex;
       justify-content: center;
-      margin: $spacer*3 0px;
+      margin: $spacer * 3 0px;
 
       .box--left {
         display: flex;
@@ -41,33 +42,30 @@
       .box--right {
         display: flex;
         flex-direction: column;
-        padding: $spacer*3 0px;
+        padding: $spacer * 3 0px;
 
         .about--me--text {
-          font-family: "Ubuntu", sans-serif;
-          font-weight: 600;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 400;
           font-size: 1.2rem;
           opacity: 0.8;
           text-align: justify;
           margin-right: 1rem;
-
         }
 
         .about--me--highlights {
-          font-family: "Ubuntu", sans-serif;
+          font-family: 'Montserrat', sans-serif;
           padding-block: 12px;
 
           .highlights--text {
-            font-family: "Ubuntu", sans-serif;
-            font-weight: 900;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
             font-size: 1.5rem;
-
           }
 
           .highlights--list {
-            font-family: "Ubuntu", sans-serif;
+            font-family: 'Montserrat', sans-serif;
             font-size: 1.2rem;
-
           }
         }
       }
@@ -76,19 +74,18 @@
 }
 //MOBILE VIEW
 @media all and (max-width: 786px) {
-
-  .box--right{
-    padding: 0 0 48px 0!important;
-  .about--me--text {
-    padding-inline: 1rem;
-    margin-right: 0px;
-  }
-  .about--me--highlights {
-    .highlights--text {
-      padding-top: $spacer;
-      display: block;
-      text-align: center;
+  .box--right {
+    padding: 0 0 48px 0 !important;
+    .about--me--text {
+      padding-inline: 1rem;
+      margin-right: 0px;
     }
-  }
+    .about--me--highlights {
+      .highlights--text {
+        padding-top: $spacer;
+        display: block;
+        text-align: center;
+      }
+    }
   }
 }

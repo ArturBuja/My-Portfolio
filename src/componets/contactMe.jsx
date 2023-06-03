@@ -27,14 +27,12 @@ function ContactMe() {
           'user_27h1MqqBApNu181G79mlX'
         )
         .then(
-          result => {
-            console.log(result.text);
+          () => {
             alert(
               'Mail has been sent. I will contact you as soon as possible. Thanks.\n'
             );
           },
-          error => {
-            console.log(error.text);
+          () => {
             alert(
               'Something went wrong. Mail was not sent, please try again.\n'
             );

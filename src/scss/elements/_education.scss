@@ -3,36 +3,28 @@
   flex-direction: column;
 
   .education--one {
+    margin: $spacer * 1.5 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: $spacer * 1.5 0px;
     .education--year {
-      width: 30%;
-
-      @include mobile {
-        flex: 2;
-        float: right;
-      }
       .passedout--year {
         font-family: monospace;
-        font-size: 1.2vw;
+        font-size: min(1rem, 1.2vw);
         background-color: $standoutColor;
         color: white;
         padding: 10px;
         border-radius: 20px;
-        width: 30%;
         text-align: center;
         @include mobile {
-          font-size: 0.6rem;
-          color: #fff;
+          font-size: 0.8rem;
         }
       }
     }
 
     .education--name {
       display: flex;
-      width: 80%;
+      width: 70%;
       flex-direction: column;
       @include mobile {
         flex: 3;

@@ -13,18 +13,16 @@
       height: 500px;
       margin-inline: auto;
       margin-top: $spacer;
-      @include mobile {
-      }
 
       .left--contact {
-        padding: $spacer * 0.5;
-
         .get--in--touch {
-          margin: $spacer * 1.5 $spacer * 3;
+          display: flex;
+          justify-content: center;
+          margin: $spacer * 1.5 0;
           color: #ffffff;
           font-family: 'Montserrat', sans-serif;
           font-weight: 700;
-          font-size: 2rem;
+          font-size: 2.2rem;
         }
       }
 

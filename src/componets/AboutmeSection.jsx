@@ -55,13 +55,13 @@ export function AboutmeSection() {
           ) : (
             <div className=' col-lg-6 col-md-6 col-sm-12 box--right'>
               <span className='about--me--text'>
-                Cześć, jestem front-end developerem. Mam doświadczenie w
-                tworzeniu stron internetowych, a także aplikacji mobilnych na
-                system Android oraz iOS. Kocham programowanie, jest to rzecz w
-                której się spełniam, oraz mam chęć każdego dnia poznawać nowe
-                rzeczy. Skończyłem studia magisterskie na kierunku
-                bezpieczeństwo wewnętrzne, a następnie ukończyłem kurs
-                Javascript wraz z użyciem biblioteki React.
+                Cześć, jestem <b>front-end developerem</b>. Mam doświadczenie w
+                tworzeniu <b>stron internetowych</b>, a także{' '}
+                <b>aplikacji mobilnych</b> na system <b>Android oraz iOS</b>.
+                Kocham programowanie, jest to rzecz w której się spełniam, oraz
+                mam chęć każdego dnia poznawać nowe rzeczy. Skończyłem studia
+                magisterskie na kierunku bezpieczeństwo wewnętrzne, a następnie
+                ukończyłem kurs Javascript wraz z użyciem biblioteki React.
               </span>
               <span className='about--me--highlights'>
                 <span className='highlights--text'>

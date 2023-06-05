@@ -2,23 +2,60 @@ import React, { useState, useContext } from 'react';
 import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
 import { LangContext } from '../contex/lang-context';
+import useInput from '../hooks/useInput';
+
+const isNotEmptyMessage = value => value.trim().length >= 10;
+const isNotEmptyNane = value => value.trim().length >= 2;
+const isEmailOrEmpty = value =>
+  /^([A-Za-z0-9_\-.])+@([A-Za-z0-9_\-.])+\.([A-Za-z]{2,4})$/.test(value);
 
 function ContactMe() {
   const form = useRef();
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+
   const langCtx = useContext(LangContext);
+
+  const {
+    value: message,
+    isValid: messageIsValid,
+    hasError: messageHasError,
+    valueChangeHandler: messageChangeHandler,
+    inputBlurHandler: messageBlurHandler,
+    reset: resetMessage,
+    setIsTouched: messageIsSubmitted,
+  } = useInput(isNotEmptyMessage);
+  const {
+    value: email,
+    isValid: emailIsValid,
+    hasError: emailHasError,
+    valueChangeHandler: emailChangeHandler,
+    inputBlurHandler: emailBlurHandler,
+    reset: resetEmail,
+    setIsTouched: emailIsSubmitted,
+  } = useInput(isEmailOrEmpty);
+  const {
+    value: name,
+    isValid: nameIsValid,
+    hasError: nameHasError,
+    valueChangeHandler: nameChangeHandler,
+    inputBlurHandler: nameBlurHandler,
+    reset: resetName,
+    setIsTouched: nameIsSubmitted,
+  } = useInput(isNotEmptyNane);
+
+  let formIsValid = false;
+
+  if (messageIsValid && emailIsValid && nameIsValid) {
+    formIsValid = true;
+  }
+  const resetForm = () => {
+    resetMessage();
+    resetEmail();
+    resetName();
+  };
 
   const sendEmail = e => {
     e.preventDefault();
-    if (!name) {
-      alert('Fill in the name field\n');
-    } else if (!email) {
-      alert('Fill in the e-mail field\n');
-    } else if (!message) {
-      alert('Fill in the message field\n');
-    } else {
+    if (formIsValid) {
       emailjs
         .sendForm(
           'service_uwh1rwk',
@@ -29,19 +66,29 @@ function ContactMe() {
         .then(
           () => {
             alert(
-              'Mail has been sent. I will contact you as soon as possible. Thanks.\n'
+              langCtx.isEnglish
+                ? 'Mail has been sent. I will contact you as soon as possible. Thanks.\n'
+                : 'Poczta została wysłana. Skontaktuję się z Tobą tak szybko, jak to możliwe. Dziękuję.\n'
             );
           },
           () => {
             alert(
-              'Something went wrong. Mail was not sent, please try again.\n'
+              langCtx.isEnglish
+                ? 'Something went wrong. Mail was not sent, please try again.\n'
+                : 'Coś poszło nie tak. Spróbuj ponownie później\n'
             );
           }
         );
-
-      setName('');
-      setEmail('');
-      setMessage('');
+      resetForm();
+    } else {
+      if (!messageIsValid) messageIsSubmitted(true);
+      if (!emailIsValid) emailIsSubmitted(true);
+      if (!nameIsValid) nameIsSubmitted(true);
+      alert(
+        langCtx.isEnglish
+          ? 'Something went wrong. Mail was not sent, please try again.\n'
+          : 'Popraw błednie wypełnione pola\n'
+      );
     }
   };
   return (
@@ -86,8 +133,9 @@ function ContactMe() {
                 <input
                   name='name'
                   onChange={e => {
-                    setName(e.target.value);
+                    nameChangeHandler(e.target.value);
                   }}
+                  onBlur={nameBlurHandler}
                   value={name}
                   className='input--groups'
                   type='text'
@@ -96,13 +144,21 @@ function ContactMe() {
                   }
                 />
               </div>
+              {nameHasError && (
+                <span className='input--error'>
+                  {langCtx.isEnglish
+                    ? 'The name must contain at least two characters'
+                    : 'Imie musi zawierać minimum dwa znaki'}
+                </span>
+              )}
               <div className='input--group'>
                 <label> E-mail </label>
                 <input
                   name='email'
                   onChange={e => {
-                    setEmail(e.target.value);
+                    emailChangeHandler(e.target.value);
                   }}
+                  onBlur={emailBlurHandler}
                   value={email}
                   className='input--groups'
                   type='text'
@@ -111,13 +167,21 @@ function ContactMe() {
                   }
                 />
               </div>
+              {emailHasError && (
+                <span className='input--error'>
+                  {langCtx.isEnglish
+                    ? 'Please enter a valid email address'
+                    : 'Wpisz poprawny adres e-mail'}
+                </span>
+              )}
               <div className='input--group'>
                 <label>{langCtx.isEnglish ? 'Message' : 'Wiadomość'} </label>
                 <textarea
                   name='message'
                   onChange={e => {
-                    setMessage(e.target.value);
+                    messageChangeHandler(e.target.value);
                   }}
+                  onBlur={messageBlurHandler}
                   value={message}
                   className='input--groups'
                   type='text'
@@ -128,6 +192,13 @@ function ContactMe() {
                   }
                 />
               </div>
+              {messageHasError && (
+                <span className='input--error'>
+                  {langCtx.isEnglish
+                    ? 'The message must contain at least ten characters'
+                    : 'Wiadomość musi zawierać minimum dziesieć znaków'}
+                </span>
+              )}
               <div className='input--group'>
                 <input
                   className='btn'

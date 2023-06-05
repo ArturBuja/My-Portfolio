@@ -46,6 +46,13 @@
           border-radius: 20px;
           width: 80%;
           padding: 24px;
+          .input--error {
+            color: #ff0033;
+            font-family: 'Montserrat', monospace;
+            font-size: 0.8em;
+            font-weight: 500;
+            letter-spacing: 0.15em;
+          }
 
           .input--group {
             margin: $spacer 0;

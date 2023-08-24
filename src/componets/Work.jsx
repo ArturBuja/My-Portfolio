@@ -11,7 +11,9 @@ export default function Work() {
         <div className='work--container'>
           <div className='work'>
             <span className='work--name--company'>Polskie Radio S.A</span>
-            <span className='passedout--year'>03/2022 - present</span>
+            <span className='passedout--year'>
+              03/2022 - {langCtx.isEnglish ? 'now' : 'aktualnie'}
+            </span>
           </div>
         </div>
         <div className='work--container'>

@@ -10,7 +10,9 @@ function Testimonials() {
   }, []);
 
   const getData = async () => {
-    const resume = await fetch(`https://api.github.com/users/ArturBuja/repos`);
+    const resume = await fetch(
+      `https://api.github.com/users/ArturBuja/repos?type=public&per_page=100&sort=pushed`
+    );
     const data = await resume.json();
 
     getName(data);

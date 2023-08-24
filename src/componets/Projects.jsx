@@ -31,6 +31,25 @@ export default function Projects() {
       </div>
       <div className='education--one'>
         <div className='education--name'>
+          <span className='education--name-school'>Threads App </span>
+          <span className='education--degree'>
+            {langCtx.isEnglish ? ' Technologies used' : 'Użyte technologie'}:
+            MongoDB, Next.js, Tailwind
+          </span>
+          <a href='https://threds-app.vercel.app/'>
+            <span className='education--degree'>
+              {langCtx.isEnglish
+                ? 'Check live (click me!)'
+                : 'Zobacz na żywo (kliknij mnie)'}
+            </span>
+          </a>
+        </div>
+        <div>
+          <span className='passedout--year'>08/2023</span>
+        </div>
+      </div>
+      <div className='education--one'>
+        <div className='education--name'>
           <span className='education--name-school'>Scrum Lab Front End</span>
           <span className='education--degree'>
             {langCtx.isEnglish ? ' Technologies used' : 'Użyte technologie'}:

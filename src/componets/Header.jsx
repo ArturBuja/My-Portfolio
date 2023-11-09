@@ -7,7 +7,6 @@ import React, {
 } from 'react';
 
 //COMPONETS LIB
-import { FaReact } from 'react-icons/fa';
 import Typed from 'typed.js';
 import { Sling as Hamburger } from 'hamburger-react';
 

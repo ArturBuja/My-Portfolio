@@ -1,0 +1,13 @@
+.passedout--year {
+  font-family: monospace;
+  font-size: min(1rem, 1.2vw);
+  background-color: $standoutColor;
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+  text-align: center;
+  @include mobile {
+    font-size: 0.8rem;
+    height: fit-content;
+  }
+}

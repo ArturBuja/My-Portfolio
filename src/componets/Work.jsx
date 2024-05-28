@@ -7,12 +7,44 @@ export default function Work() {
 
   return (
     <>
-      <div className='work--inside--new'>
+      <div className='work--inside--new'> 
+      <div className='work--container'>
+          <div className='work'>
+            <span className='work--name--company'>Roboticket</span>
+            <span className='passedout--year'>
+              12/2023 - {langCtx.isEnglish ? 'now' : 'aktualnie'}
+            </span>
+          </div>
+        </div>
+        <div className='work--container'>
+          <span className='work--position'>React Native Developer</span>
+          <span className='work--description'>
+            {langCtx.isEnglish ? (
+              <ul>
+                <li>Publication of applications in App / Google Play Store</li>
+                <li>State management using React Redux</li>
+                <li>Notification management using Firebase Message</li>
+                <li>Troubleshooting</li>
+                <li>Translating applications using i18n</li>
+              </ul>
+            ) : (
+              <ul>
+                <li>Publikacja aplikacji w App / Google Play Store</li>
+                <li>Zarządzanie stanem przy użyciu React Redux</li>
+                <li>Zarządzanie powiadomieniami przy użyciu Firebase Message</li>
+                <li>Rozwiązywanie problemów</li>
+                <li>Tłumaczenie aplikacji przy użyciu i18n</li>
+              </ul>
+            )}
+          </span>
+        </div>
+
+        
         <div className='work--container'>
           <div className='work'>
             <span className='work--name--company'>Polskie Radio S.A</span>
             <span className='passedout--year'>
-              03/2022 - {langCtx.isEnglish ? 'now' : 'aktualnie'}
+              03/2022 - 11/2023
             </span>
           </div>
         </div>
@@ -73,33 +105,6 @@ export default function Work() {
                 <li>Rozwiązywanie problemów</li>
                 <li>Aktualizacja bibliotek w aplikacjach</li>
                 <li>Aktualizacja stron opartych o WordPress</li>
-              </ul>
-            )}
-          </span>
-        </div>
-
-        <div className='work--container'>
-          <div className='work'>
-            <span className='work--name--company'>
-              Burger King Amrest Sp. z o.o
-            </span>
-            <span className='passedout--year'>05/2018 - 09/2021</span>
-          </div>
-        </div>
-        <div className='work--container'>
-          <span className='work--position'>Facility Shift Manager</span>
-          <span className='work--description'>
-            {langCtx.isEnglish ? (
-              <ul>
-                <li>Managing the shifts</li>
-                <li>Managing the costs of the semis</li>
-                <li>Assigning tasks and assistance.</li>
-              </ul>
-            ) : (
-              <ul>
-                <li>Zarządzanie zmianą</li>
-                <li>Zarządzanie kosztami Semis</li>
-                <li>Przydzielanie zadań i pomoc w ich realizowaniu</li>
               </ul>
             )}
           </span>
